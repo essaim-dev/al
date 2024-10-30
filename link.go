@@ -5,7 +5,7 @@ package al
 #cgo linux CXXFLAGS: -DLINK_PLATFORM_LINUX=1
 #cgo windows CXXFLAGS: -DLINK_PLATFORM_WINDOWS=1
 
-#cgo CXXFLAGS: -std=c++11
+#cgo CXXFLAGS: -std=c++11 -Wno-multichar
 #cgo CXXFLAGS: -I${SRCDIR}/link/include -I${SRCDIR}/link/modules/asio-standalone/asio/include
 
 #include "abl_link.h"
